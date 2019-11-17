@@ -73,5 +73,10 @@ module.exports = {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  // plugins: [
+  //   { src: "~/plugins/chart", ssr: false},
+  //   { src: "~/plugins/hchs-vue-charts", ssr: false},
+  //   { src: "~/plugins/vue-chartjs", ssr: false},
+  // ] 
 }
