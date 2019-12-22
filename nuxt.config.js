@@ -30,6 +30,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: './plugins/socket', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -60,9 +61,14 @@ module.exports = {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3
-        }
+        },
+        light: {
+          primary: colors.red.darken1, // #E53935
+          secondary: colors.red.lighten4, // #FFCDD2
+          accent: colors.indigo.base, // #3F51B5
+        },
       }
-    }
+    },
   },
   /*
   ** Build configuration
@@ -73,10 +79,5 @@ module.exports = {
     */
     extend (config, ctx) {
     }
-  },
-  // plugins: [
-  //   { src: "~/plugins/chart", ssr: false},
-  //   { src: "~/plugins/hchs-vue-charts", ssr: false},
-  //   { src: "~/plugins/vue-chartjs", ssr: false},
-  // ] 
+  }, 
 }
