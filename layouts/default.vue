@@ -25,8 +25,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-      :clipped-left="clipped"
-      fixed
+      clipped-left
       app
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
@@ -54,7 +53,6 @@
 export default {
   data () {
     return {
-      clipped: true,
       drawer: false,
       fixed: true,
       items: [
